@@ -198,7 +198,18 @@ python -c "import numpy; print numpy.__file__"
 export CFLAGS=-I/home/student/anaconda3/envs/lxy_p2/lib/python2.7/site-packages/numpy/core/include
 ```
 
+2. 改代码必须运行在GPU上，否者报错.
 
+解决方案：
+
+安装完指定版本Theano后，在自己的home目录下创建文件 .theanorc
+
+```
+[global]
+floatX = float32
+device = gpu
+
+```
 
 # kaggle_diabetic_RAM
 
