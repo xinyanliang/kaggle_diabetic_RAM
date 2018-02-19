@@ -1,6 +1,6 @@
 import multiprocessing
 import threading
-import Queue
+import queue as Queue
 from uuid import uuid4
 
 import numpy as np
