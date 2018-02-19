@@ -183,4 +183,25 @@ Options:
   + or edit the `test_dir` field in your config file(s) inside the `configs` directory
   + or pass the `--test_dir /path/to/test/files` argument to `transform.py` and `blend.py`
 
+
+#### 运行问题解决方案
+
+1. 安装sharedarray报错,具体描述间 [link](https://github.com/sveitser/kaggle_diabetic/issues/7) 
+
+解决方案
+
+```python
+python -c "import numpy; print numpy.__file__"
+```
+将打印出的numpy路径替换到下面命令中所对应的numpy路径中
+``` shell
+export CFLAGS=-I/home/student/anaconda3/envs/lxy_p2/lib/python2.7/site-packages/numpy/core/include
+```
+
+
+
 # kaggle_diabetic_RAM
+
+
+
+
