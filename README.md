@@ -211,6 +211,16 @@ device = gpu
 
 ```
 
+3. 如何查看cuda版本 (8.0.61)
+```
+cat /usr/local/cuda/version.txt
+```
+
+查看cudnn版本 (6.0.21)
+
+```
+cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+```
 # kaggle_diabetic_RAM
 
 
