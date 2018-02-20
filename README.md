@@ -220,7 +220,11 @@ cat /usr/local/cuda/version.txt
 
 ```
 cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+
 ```
+
+
+[5th place](http://jeffreydf.github.io/diabetic-retinopathy-detection/#code-models-and-example-activations)
 # kaggle_diabetic_RAM
 
 
