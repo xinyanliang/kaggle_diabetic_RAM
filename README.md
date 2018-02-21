@@ -226,7 +226,13 @@ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 4. src/nolearn-master/nolearn/lasagne/util.py
 将capacity[np.negative(np.isfinite(capacity))] = 1改为 capacity[~(np.isfinite(capacity))] = 1
 
+5. 运行准备
 
+```
+
+source ~/.bashrccudnn5
+python make_kaggle_solution.sh
+```
 
 [5th place](http://jeffreydf.github.io/diabetic-retinopathy-detection/#code-models-and-example-activations)
 # kaggle_diabetic_RAM
